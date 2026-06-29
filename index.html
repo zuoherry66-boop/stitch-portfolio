@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stitch Portfolio UI</title>
+    <meta
+      name="description"
+      content="A responsive editorial-style portfolio website concept inspired by Stitch references."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">STITCH ARCHIVE</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="打开导航"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="主导航">
+          <a href="#work">作品</a>
+          <a href="#services">服务</a>
+          <a href="#story">关于</a>
+          <a href="#contact">联系</a>
+          <a class="nav-cta" href="#upload">上传入口</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Selected Works / Responsive Portfolio System</p>
+            <h1>把作品集做成<br />有编辑感的品牌首页</h1>
+            <p class="hero-text">
+              这是一套可直接替换案例的作品站首页方案，融合了杂志式标题、极简留白和作品型卡片系统，适合后续自己删案例、换封面、上传项目。
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">查看作品结构</a>
+              <a class="button button-secondary" href="#upload">预留上传入口</a>
+            </div>
+            <dl class="hero-stats" aria-label="作品数据">
+              <div>
+                <dt>12</dt>
+                <dd>精选案例位</dd>
+              </div>
+              <div>
+                <dt>4</dt>
+                <dd>内容版块</dd>
+              </div>
+              <div>
+                <dt>100%</dt>
+                <dd>响应式适配</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-frame hero-frame-tall">
+              <div class="mock-scene scene-gallery"></div>
+            </div>
+            <article class="floating-note">
+              <span>Featured Layout</span>
+              <strong>Editorial Portfolio / Auto Adaptive</strong>
+            </article>
+            <div class="hero-frame hero-frame-wide">
+              <div class="mock-scene scene-device"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="category-strip" aria-label="作品分类">
+          <button class="chip is-active" data-filter="all" type="button">全部方向</button>
+          <button class="chip" data-filter="branding" type="button">品牌识别</button>
+          <button class="chip" data-filter="digital" type="button">数字体验</button>
+          <button class="chip" data-filter="campaign" type="button">视觉企划</button>
+          <button class="chip" data-filter="editorial" type="button">编辑风格</button>
+        </section>
+
+        <section class="featured-grid" id="work">
+          <article class="project-card" data-category="editorial">
+            <div class="project-media media-amber"></div>
+            <div class="project-body">
+              <span class="tag">精选案例</span>
+              <h2>Creative Archive</h2>
+              <p>杂志式首页结构，适合高端作品集、摄影、空间和品牌策展。</p>
+            </div>
+          </article>
+
+          <article class="project-card project-card-tall" data-category="branding">
+            <div class="project-media media-sage"></div>
+            <div class="project-body">
+              <span class="tag">Brand System</span>
+              <h2>Urban Bloom Identity</h2>
+              <p>适合放品牌项目、包装系统、海报与视觉规范等内容。</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="digital">
+            <div class="project-media media-ink"></div>
+            <div class="project-body">
+              <span class="tag">Digital Product</span>
+              <h2>Symphony Interface</h2>
+              <p>突出产品界面截图、交互亮点与跨端视觉一致性。</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="campaign">
+            <div class="project-media media-rose"></div>
+            <div class="project-body">
+              <span class="tag">Campaign Visual</span>
+              <h2>Motion-led Release</h2>
+              <p>适合活动主视觉、短片封面、社媒传播和整合推广项目。</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="service-band" id="services">
+          <div class="section-heading">
+            <p class="eyebrow">What This Site Can Hold</p>
+            <h2>一套结构，兼容你后续不同类型的作品</h2>
+          </div>
+          <div class="service-grid">
+            <article>
+              <h3>首页主视觉</h3>
+              <p>大标题、主案例、重点按钮和数据概览，适合第一屏快速建立质感。</p>
+            </article>
+            <article>
+              <h3>作品筛选区</h3>
+              <p>通过分类标签切换案例，后面你替换项目时不需要重做页面节奏。</p>
+            </article>
+            <article>
+              <h3>上传与联系</h3>
+              <p>保留上传入口和合作咨询区，方便以后接项目、收简报或接收作品。</p>
+            </article>
+            <article>
+              <h3>移动端适配</h3>
+              <p>手机端自动改成单列阅读、折叠菜单和更紧凑的卡片节奏。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="story-section" id="story">
+          <div class="story-copy">
+            <p class="eyebrow">Editorial Direction</p>
+            <h2>不是套模板，而是让作品像出版物一样被阅读</h2>
+            <p>
+              整体视觉结合了参考图里的留白、柔和光感、圆角卡片和粗细对比明显的标题系统。桌面端强调排版张力，移动端则把结构压缩成更流畅的阅读路径，避免手机上出现“缩小版电脑网页”的问题。
+            </p>
+          </div>
+          <div class="story-panel">
+            <div class="story-metrics">
+              <div>
+                <strong>Desktop</strong>
+                <span>双列主视觉 + 卡片拼贴</span>
+              </div>
+              <div>
+                <strong>Tablet</strong>
+                <span>栅格过渡 + 信息优先级重排</span>
+              </div>
+              <div>
+                <strong>Mobile</strong>
+                <span>单列阅读 + 触控优先按钮</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="upload-section" id="upload">
+          <div class="section-heading">
+            <p class="eyebrow">Reserved Block</p>
+            <h2>这里先帮你把上传入口和后续替换位留好</h2>
+          </div>
+          <div class="upload-card">
+            <div>
+              <h3>Share Your Work</h3>
+              <p>后续你可以把这里接到表单、邮箱、网盘，或者直接改成“下载作品集 / 查看完整案例”。</p>
+            </div>
+            <div class="upload-actions">
+              <a class="button button-primary" href="#contact">合作咨询</a>
+              <a class="button button-secondary" href="#work">继续看案例</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="contact">
+        <div>
+          <p class="eyebrow">Contact Block</p>
+          <h2>你后面只需要换成自己的联系方式和作品链接</h2>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <a href="/">Behance / Dribbble / Xiaohongshu</a>
+          <a href="/">WeChat / Instagram / Portfolio PDF</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
